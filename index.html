@@ -8,10 +8,13 @@
 </head>
 <body>
   <a-scene>
+    <a-assets>
+      <img id="bluebrick1" src="bluebrick.png"
+    </a-assets>
     <!-- WHITE FLOOR -->
     <a-plane color="#ffffff"position="0 0 2" width="9" height="9" rotation="-90 0 0"></a-plane>
     <!-- BLUE WALL -->
-    <a-plane position="0 4.5 -2.5" width="9" height="9" material="src=bluebrick.png; repeat: 20 20"></a-plane>
+    <a-plane position="0 4.5 -2.5" width="9" height="9" material="src: #bluebrick1; repeat: 20 20"></a-plane>
     <!-- PURPLE WALL -->
     <a-plane color="#9999ff"position="0 4.5 6.5" width="9" height="9" rotation="0 180 0"></a-plane>
     <a-sky color="#030303"></a-sky>
