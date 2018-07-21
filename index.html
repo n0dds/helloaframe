@@ -11,10 +11,13 @@
     <img id="bluebrick1" src="bluebrick.png">
     <img id="painting1" src="penting.png">
     <img id="floor1" src="purpfloor.png">
+    <img id="rug1" src="rug.png">
   </a-assets>
   <a-scene>
     <!-- PURPLE FLOOR -->
     <a-plane position="0 0 2" width="9" height="9" rotation="-90 0 0" material="src: #floor1; repeat: 2 2"></a-plane>
+    <!-- RUG -->
+    <a-plane position="0 0 2.02" width="9" height="9" rotation="-90 0 0" material="src: #rug1; alphaTest: 0.5"></a-plane>
     <!-- LEFT BLUE WALL -->
     <a-plane position="0 4.5 -2.5" width="9" height="9" material="src: #bluebrick1; repeat: 5 5"></a-plane>
     <!-- LEFT WALL PAINTING -->
