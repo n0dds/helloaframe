@@ -12,6 +12,8 @@
     <img id="painting1" src="penting.png">
     <img id="floor1" src="purpfloor.png">
     <img id="rug1" src="rug.png">
+    <img id="wallleft" src="wallleft.png">
+    <img id="wallright" src="wallright.png">
   </a-assets>
   <a-scene>
     <!-- PURPLE FLOOR -->
@@ -20,10 +22,14 @@
     <a-plane position="0 0.03 2" width="9" height="9" rotation="-90 90 0" material="src: #rug1; alphaTest: 0.5"></a-plane>
     <!-- LEFT BLUE WALL -->
     <a-plane position="0 4.5 -2.5" width="9" height="9" material="src: #bluebrick1; repeat: 5 5"></a-plane>
+    <!-- LEFT WALL DECAL -->
+    <a-plane position="0 4.5 -2.45" width="9" height="9" material="src: #wallleft; alphaTest: 0.5"></a-plane>
     <!-- LEFT WALL PAINTING -->
     <a-plane position="0 4.5 -2.4" width="9" height="9" material="src: #painting1; alphaTest: 0.5"></a-plane>
     <!-- RIGHT BLUE WALL -->
     <a-plane position="0 4.5 6.5" width="9" height="9" rotation="0 180 0" material="src: #bluebrick1; repeat: 5 5"></a-plane>
+    <!-- RIGHT WALL DECAL -->
+    <a-plane position="0 4.5 6.45" width="9" height="9" rotation="0 180 0" material="src: #wallright; alphaTest: 0.5"></a-plane>
     <a-sky color="#030303"></a-sky>
     <a-entity position="0 1.6 2" rotation="0 270 0">
       <a-camera></a-camera>
