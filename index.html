@@ -15,6 +15,7 @@
     <img id="wallleft" src="wallleft.png">
     <img id="wallright" src="wallright.png">
     <img id="wallpap1" src="wallpap1.png">
+    <img id="wallback1" src="wallback.png">
   </a-assets>
   <a-scene>
     <!-- PURPLE FLOOR -->
@@ -34,7 +35,9 @@
     <!-- RIGHT WALL CORNER -->
     <a-plane position="1 4.5 10.5" width="8" height="9" rotation="0 90 0" material="src: #bluebrick1; repeat: 5 5"></a-plane>
     <!-- BACK WALL -->
-    <a-plane position="7 4.5 6" width="18" height="9" rotation="0 270 0" material="src: #bluebrick1; repeat: 12 5"></a-plane>
+    <a-plane position="7 4.5 6" width="18" height="9" rotation="0 270 0" material="src: #wallpap1; repeat: 12 5"></a-plane>
+    <!-- BACK WALL DECAL -->
+    <a-plane position="6.59 4.5 6" width="18" height="9" rotation="0 270 0" material="src: #wallback1; repeat: 12 5; alphaTest: 0.5"></a-plane>
     <a-sky color="#030303"></a-sky>
     <a-entity position="0 1.6 2" rotation="0 270 0">
       <a-camera></a-camera>
