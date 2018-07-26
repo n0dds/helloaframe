@@ -17,7 +17,8 @@
     <img id="wallpap1" src="wallpap1.png">
     <img id="wallback1" src="wallback.png">
     <img id="drawers" src="drawers.png">
-    <img id="roof" src="roof.png">
+    <img id="roofleft" src="roof.png">
+    <img id="roofright" src="roofright.png">
   </a-assets>
   <a-scene>
     <!-- TEXTURES -->
@@ -26,9 +27,9 @@
       <!-- PURPLE FLOOR SEG 2 -->
       <a-plane position="0 0 11" width="14" height="9" rotation="-90 0 0" material="src: #floor1; repeat: 2 2"></a-plane>
       <!-- CEILING SEG 1 -->
-      <a-plane position="0 11.2 -0.25" width="14" height="6.4" rotation="45 0 180" material="src: #roof; repeat: 1 1"></a-plane>
+      <a-plane position="0 11.2 -0.25" width="14" height="6.4" rotation="45 0 180" material="src: #roofleft; repeat: 1 1"></a-plane>
       <!-- CEILING SEG 2 -->
-      <a-plane position="0 11.2 4.25" width="14" height="6.4" rotation="135 0 180" material="src: #roof; repeat: 1 1"></a-plane>
+      <a-plane position="0 11.2 4.25" width="14" height="6.4" rotation="135 0 180" material="src: #roofright; repeat: 1 1"></a-plane>
       <!-- CEILING SEG CORNER -->
       <a-plane position="0 9 11" width="14" height="9" rotation="90 0 180" material="src: #floor1; repeat: 2 2"></a-plane>
       <!-- RUG -->
@@ -57,7 +58,7 @@
       <a-plane height="2.6" width="5" position="5.6 1.2 0.5" rotation="0 270 0" material="src: #drawers" ></a-plane>
 
     <!-- EFFECTS -->
-    <a-light type="point" color="#367d7d" intensity="2"position="-4 8 0"></a-light>
+    <a-light type="point" color="#367d7d" intensity="2"position="-4 8 0" distance="3"></a-light>
 
     <!-- PLAYER -->
     <a-entity position="-6 1.6 2" rotation="0 270 0">
