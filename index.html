@@ -23,6 +23,7 @@
     <img id="front" src="frontwall.png">
     <img id="frontdecal" src="frontwall_decal.png">
     <img id="door" src="door.png">
+    <img id="rain" src="rain.mp4">
   </a-assets>
   <a-scene>
     <!-- TEXTURES -->
@@ -80,9 +81,8 @@
     <!-- EFFECTS -->
     <a-light type="point" color="#367d7d" intensity="7"position="-5.5 6 2.3" distance="23" decay="6"></a-light>
 
-    <!-- PLAYER -->
     <a-entity position="-6 1.6 2" rotation="0 270 0">
-    <a-sky color="black"></a-sky>
+    <a-sky material="src: #rain"></a-sky>
       <a-camera></a-camera>
     </a-entity>
   </a-scene>
