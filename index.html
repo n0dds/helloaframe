@@ -25,9 +25,14 @@
     <img id="door" src="door.png">
     <img id="mat" src="mat.png">
     <img id="paper1" src="NEWSPAPER1.png">
+    <img id="letter" src="letter.png">
     <video id="rain" src="Rain.mp4" autoplay="true" loop="true">
   </a-assets>
   <a-scene>
+      <a-sky material="src: #rain"></a-sky>
+    <!-- EFFECTS -->
+      <a-light type="point" color="#367d7d" intensity="7"position="-5.5 6 2.3" distance="23" decay="6"></a-light>
+      <a-sound src="04 Driving Rain On Window (Interior.wav" autoplay="true" loop="true" position="-9 2 2"></a-sound>
     <!-- TEXTURES -->
       <!-- PURPLE FLOOR -->
       <a-plane position="0 0 2" width="14" height="9" rotation="-90 0 0" material="src: #floor1; repeat: 2 2; roughness: 1; metalness: 0"></a-plane>
@@ -83,13 +88,10 @@
       <a-box position="-6 0 2" depth="2.7" width="1.2" height="0.15" material="src: #mat; roughness: 3; metalness: 0"></a-box>
       <!-- NEWSPAPER 1 -->
       <a-plane position="-6 0.1 2" width="1" height="1" rotation="-90 -60 0" material="src: #paper1; roughness: 2; metalness: 0; alphaTest: 0.9"></a-plane>
-
-    <!-- EFFECTS -->
-    <a-light type="point" color="#367d7d" intensity="7"position="-5.5 6 2.3" distance="23" decay="6"></a-light>
-    <a-sound src="04 Driving Rain On Window (Interior.wav" autoplay="true" loop="true" position="-9 2 2"></a-sound>
+      <!-- LETTERS -->
+      <a-plane position="-6 0.2 2" width="0.3" height="0.1" rotation="-90 -60 0" material="src: #letter; roughness: 2; metalness: 0; alphaTest: 0.9"></a-plane>
 
     <a-entity position="-5 1.6 2" rotation="0 270 0">
-    <a-sky material="src: #rain"></a-sky>
       <a-camera></a-camera>
     </a-entity>
   </a-scene>
