@@ -24,6 +24,7 @@
     <img id="frontdecal" src="frontwall_decal.png">
     <img id="door" src="door.png">
     <img id="mat" src="mat.png">
+    <img id="paper1" src="NEWSPAPER1.png">
     <video id="rain" src="Rain.mp4" autoplay="true" loop="true">
   </a-assets>
   <a-scene>
@@ -79,7 +80,9 @@
       <!-- DOOR -->
       <a-box color="white" position="-7.2 2.32 2.04" depth="0.16" width="2.75" height="4.6" rotation="0 -80 0" material="src: #door; alphaTest: 0.9; roughness: 1; metalness: 0"></a-box>
       <!-- DOORMAT -->
-      <a-box color="white" position="-6 0 2" depth="2.7" width="1.2" height="0.15" material="src: #mat; roughness: 3"></a-box>
+      <a-box position="-6 0 2" depth="2.7" width="1.2" height="0.15" material="src: #mat; roughness: 3; metalness: 0"></a-box>
+      <!-- NEWSPAPER 1 -->
+      <a-box position="-6 1 2" depth="2.7" width="1.2" height="0.15" material="src: #paper1; roughness: 2; metalness: 0; alphaTest: 0.9"></a-box>
 
     <!-- EFFECTS -->
     <a-light type="point" color="#367d7d" intensity="7"position="-5.5 6 2.3" distance="23" decay="6"></a-light>
