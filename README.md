@@ -15,3 +15,9 @@ SOURCES AND LICENES INFROMATION:
   Exterior rain sound: BBC Complete Sound Effects Library/BBC21 - Weather/04 Driving Rain on Window (Interior)
 
 SOUND IDEAS LICENSE INFORMATION: https://www.sound-ideas.com/Page/Sound-Ideas-End-User-License
+
+PROGRAMS USED:
+  Atom Text Editor
+  Windows Command Prompt
+  Adobe Photoshop CC (2018)
+  Adobe Audition CC (2018)
