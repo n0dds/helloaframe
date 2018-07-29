@@ -9,6 +9,17 @@
   <a-scene>
     <!-- EFFECTS -->
       <a-sky color="black"></a-sky>
+      <a-light type="point" color="#367d7d" intensity="7"position="-5.5 6 2.3" distance="23" decay="6"></a-light>
+      <!-- RAIN OUTSIDE -->
+      <a-box sound="src: #rainsound; autoplay: true; loop: true; volume: 0.15" color="blue" position="-9 2 2" material="opacity: 0"></a-box>
+      <!-- RAIN INSIDE -->
+      <a-box sound="src: #rainin; autoplay: true; loop: true; volume: 0.5" color="yellow" position="4 4 2" material="opacity: 0"></a-box>
+      <!-- HOUSE CREAKING -->
+      <a-box sound="src: #creak; autoplay: true; loop: true; volume: 1" color="red" position="3 6 2" material="opacity: 0"></a-box>
+      <!-- WIND -->
+      <a-box sound="src: #wind; autoplay: true; loop: true; volume: 1" color="green" position="-8 6 2" material="opacity: 0"></a-box>
+      <!-- G-G-GHOST -->
+      <a-box sound="src: #ghost; autoplay: true; loop: true; volume: 0.7" color="white" material="opacity: 0" position="-5.4 6 2"></a-box>
     <!-- TEXTURES -->
       <!-- PURPLE FLOOR -->
       <a-plane position="0 0 2" width="14" height="9" rotation="-90 0 0" material="src: #floor1; repeat: 2 2; roughness: 1; metalness: 0"></a-plane>
@@ -42,6 +53,8 @@
       <a-plane position="7 11 6" width="18" height="5" rotation="0 270 0" material="src: #roofleft; roughness: 1; metalness: 0"></a-plane>
       <!-- FRONT WALL -->
       <a-plane position="-6.92 6.3 2" width="9.5" height="14" rotation="0 90 0" material="src: #front; alphaTest: 0.9; roughness: 1; metalness: 0"></a-plane>
+      <!-- FRONT WALL DECAL-->
+      <a-plane position="-6.915 6.8 2" width="9.5" height="14" rotation="0 90 0" material="src: #frontdecal; alphaTest: 0.9; roughness: 1; metalness: 0"></a-plane>
 
     <!-- PROPS -->
       <!-- DRAWERS -->
@@ -56,6 +69,12 @@
       <a-box color="white" depth="0.7" width="0.7" height="10" position="-6.5 8.57 2" rotation="90 0 0" material="src: #beam; roughness: 1; metalness: 0"></a-box>
       <!-- BEAM TOP 2 -->
       <a-box color="white" depth="0.5" width="0.5" height="10" position="-6.5 11 2" rotation="90 0 0" material="src: #beam; roughness: 1; metalness: 0"></a-box>
+      <!-- DOOR -->
+      <a-box color="white" position="-7.2 2.32 2.04" depth="0.16" width="2.75" height="4.6" rotation="0 -80 0" material="src: #door; alphaTest: 0.9; roughness: 1; metalness: 0"></a-box>
+      <!-- DOORMAT -->
+      <a-box position="-6 0 2" depth="2.7" width="1.2" height="0.15" material="src: #mat; roughness: 3; metalness: 0"></a-box>
+      <!-- NEWSPAPER 1 -->
+      <a-plane position="-6 0.1 2" width="1" height="1" rotation="-90 -60 0" material="src: #paper1; roughness: 2; metalness: 0; alphaTest: 0.9"></a-plane>
       <!-- TESTBLOCK -->
       <!-- <a-box position="0 0 0" width="2" height="2" depth="2" color="green"></a-box> -->
       <!-- LETTERS were supposed to load on the door mat but a-drame couldn't handle it for whatever reason-->
