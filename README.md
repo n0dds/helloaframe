@@ -1,5 +1,6 @@
 # spookhausen
 An atmospheric haunted house experience
+The sound takes several seconds to start up
 
 SOURCES AND LICENES INFROMATION:
   Manor house photograph used on newspaper graphic: https://www.booking.com/hotel/gb/manor-house-hotel.en-gb.html
