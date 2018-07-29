@@ -5,3 +5,4 @@ Exterior rain sound: BBC Complete Sound Effects Library/BBC21 - Weather/04 Drivi
 Interior rain sound: https://www.youtube.com/watch?v=c8AxA99dnCk
 Wind sound: BBC Complete Sound Effects Library/BBC21 - Weather II - Low-Pitched Wind
 Creaking house sound: https://www.youtube.com/watch?v=swXRvj4b3DM
+Whispering sound: https://www.youtube.com/watch?v=wyjbp9cdkdM
