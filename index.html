@@ -29,10 +29,9 @@
       <img id="paper1" src="NEWSPAPER1.png">
     </a-assets>
     <!-- EFFECTS -->
-      <!-- <a-sky material="src: #rain" autoplay="true" loop="true"></a-sky> -->
-      <a-light type="point" color="#367d7d" intensity="7" position="-5.5 6 2.3" distance="23" decay="6"></a-light>
-      <a-plane src="rain.wav" autoplay="true" loop="true" position="-7 2 2"></a-plane>
-      <!-- <a-plane position="-9 6.3 2" width="25" height="17" rotation="0 0 0" material="src: #rain"></plane> -->
+      <a-sky material="src: #rain" autoplay="true" loop="true"></a-sky>
+      <a-light type="point" color="#367d7d" intensity="7"position="-5.5 6 2.3" distance="23" decay="6"></a-light>
+      <a-sound src="rain.wav" autoplay="true" loop="true" position="-9 2 2"></a-sound>
     <!-- TEXTURES -->
       <!-- PURPLE FLOOR -->
       <a-plane position="0 0 2" width="14" height="9" rotation="-90 0 0" material="src: #floor1; repeat: 2 2; roughness: 1; metalness: 0"></a-plane>
@@ -68,6 +67,7 @@
       <a-plane position="-6.92 6.3 2" width="9.5" height="14" rotation="0 90 0" material="src: #front; alphaTest: 0.9; roughness: 1; metalness: 0"></a-plane>
       <!-- FRONT WALL DECAL-->
       <a-plane position="-6.915 6.8 2" width="9.5" height="14" rotation="0 90 0" material="src: #frontdecal; alphaTest: 0.9; roughness: 1; metalness: 0"></a-plane>
+
     <!-- PROPS -->
       <!-- DRAWERS -->
       <a-box color="#8f743d" depth="1.2"w height="2.6" width="5" position="6.3 1.2 0.5" rotation="0 90 0" castShadow="true" ></a-box>
@@ -82,7 +82,7 @@
       <!-- BEAM TOP 2 -->
       <a-box color="white" depth="0.5" width="0.5" height="10" position="-6.5 11 2" rotation="90 0 0" material="src: #beam; roughness: 1; metalness: 0"></a-box>
       <!-- DOOR -->
-      <a-box color="white" position="-7.2 2.31 2.04" depth="0.16" width="2.75" height="4.6" rotation="0 -80 0" material="src: #door; alphaTest: 0.9; roughness: 1; metalness: 0"></a-box>
+      <a-box color="white" position="-7.2 2.32 2.04" depth="0.16" width="2.75" height="4.6" rotation="0 -80 0" material="src: #door; alphaTest: 0.9; roughness: 1; metalness: 0"></a-box>
       <!-- DOORMAT -->
       <a-box position="-6 0 2" depth="2.7" width="1.2" height="0.15" material="src: #mat; roughness: 3; metalness: 0"></a-box>
       <!-- NEWSPAPER 1 -->
@@ -91,7 +91,7 @@
       <a-box position="0 0 0" width="2" height="2" depth="2" color="green"></a-box>
       <!-- LETTERS were supposed to load on the door mat but a-drame couldn't handle it for whatever reason-->
       <!-- <a-plane position="-6 0 -3" width="0.3" height="0.2" rotation="-90 -60 0" material="src:s #letter; roughness: 2; metalness: 0; alphaTest: 0.8"></a-plane> -->
-    <a-sky color="#000000"></sky>
+
     <a-entity position="-5 1.6 2" rotation="0 270 0">
       <a-camera></a-camera>
     </a-entity>
