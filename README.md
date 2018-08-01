@@ -1,4 +1,4 @@
-# spookhausen
+# spookhouse
 An atmospheric haunted house experience
 The sound takes several seconds to start up
 
